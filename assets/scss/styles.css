@@ -61,6 +61,14 @@ html {
   border-color: #0aad10 !important;
 }
 
+.t-login {
+  top: 56px !important;
+}
+
+.t-signup {
+  top: 38px !important;
+}
+
 #content-section {
   overflow: hidden;
 }

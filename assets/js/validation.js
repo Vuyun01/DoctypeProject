@@ -2,6 +2,8 @@
 let form_login = document.getElementById('form-login');
 let form_signup = document.getElementById('form-signup');
 
+// console.log(typeof(form_signup.id));
+
 const form_login_items = {
 	'email' : document.getElementById('email'),
 	'password' : document.getElementById('password'),
@@ -78,7 +80,7 @@ const success_state = (input) => {
 
 const error_state = (input, message) => {
 	let formControl = input.parentElement;
-	formControl.style.margin = "0 0 32px 0";
+	formControl.style.margin = "0 0 36px 0";
 	let error_message = formControl.querySelector('.form-error-message');
 	let error_icon = formControl.querySelector('.fa-circle-exclamation');
 	let success_icon = formControl.querySelector('.fa-circle-check');
@@ -93,7 +95,6 @@ const error_state = (input, message) => {
 const debounce = (fn, delay = 500) => {
     let timeoutId;
     return (...args) => {
-        // cancel the previous timer
         if (timeoutId) {
             clearTimeout(timeoutId);
         }
@@ -114,56 +115,62 @@ const form_validate = (form_object) => {
 			checkPhoneNumber(form_object['phone']);
 		}else{
 			checkEmpty(form_object[form_keys[i]]);
-			// console.log(form_login_items[form_key[i]]);
 		}
 	}
 }
 
 
 //validate login form
-form_login.addEventListener('submit',function(e) {
-	form_validate(form_login_items);
-	e.preventDefault();
-	
-})
+function login_verify_data(){
+	form_login.addEventListener('submit',function(e) {
+		e.preventDefault();
+		form_validate(form_login_items);
+		
+	})
+}
 
-form_login.addEventListener('input', debounce(function(e) {
-	switch(e.target.id){
-		case 'email':
-			checkEmail(form_login_items['email']);
-			break;
-		case 'password':
-			checkEmpty(form_login_items['password']);
-			break;
-	}	
-}));
+function login_check_input(){
+	form_login.addEventListener('input', debounce(function(e) {
+		switch(e.target.id){
+			case 'email':
+				checkEmail(form_login_items['email']);
+				break;
+			case 'password':
+				checkEmpty(form_login_items['password']);
+				break;
+		}	
+	}));
+}
 
 //validate sign up form
-form_signup.addEventListener('submit',function(e) {
-	// form_validate(form_signup_items);
-	console.log(form_signup);
-	e.preventDefault();
-	
-})
+function signup_verify_data(){
+	form_signup.addEventListener('submit',function(e) {
+		e.preventDefault();
+		form_validate(form_signup_items);
+		
+	})
+}
 
-// form_signup.addEventListener('input', debounce(function(e) {
-// 	switch(e.target.id){
-// 		case 'email2':
-// 			checkEmail(form_signup_items['email']);
-// 			break;
-// 		case 'name':
-// 			checkEmpty(form_signup_items['name']);
-// 			break;
-// 		case 'company':
-// 			checkEmpty(form_signup_items['company']);
-// 			break;
-// 		case 'phone':
-// 			checkPhoneNumber(form_signup_items['phone']);
-// 			break;
-// 		case 'address':
-// 			checkEmpty(form_signup_items['address']);
-// 			break;
-// 	}	
-// }));
+function signup_check_input(){
+	form_signup.addEventListener('input', debounce(function(e) {
+		switch(e.target.id){
+			case 'email2':
+				checkEmail(form_signup_items['email']);
+				break;
+			case 'name':
+				checkEmpty(form_signup_items['name']);
+				break;
+			case 'company':
+				checkEmpty(form_signup_items['company']);
+				break;
+			case 'phone':
+				checkPhoneNumber(form_signup_items['phone']);
+				break;
+			case 'address':
+				checkEmpty(form_signup_items['address']);
+				break;
+		}	
+	}));
+}
 
 

@@ -40,13 +40,12 @@
 		}
 	}
 	.form-input {
-		margin-bottom: 36px !important;
 		.form-error-message{
-			top: 88px;
+			top: 70px !important;
 			font-size: 15px
 		}
 		.form-input-control {
-			line-height: 46px;
+			line-height: 28px;
 			font-size: 20px;
 		}
 		.form-login-icon {
@@ -78,8 +77,9 @@
 		display: block;
 		padding: 18px 0;
 		width: 100%;
-		line-height: 46px;
+		line-height: 28px;
 		font-size: 23px;
+		margin-top: 4rem;
 	}
 	.form-footer {
 		font-size: 20px;

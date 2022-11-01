@@ -28,17 +28,17 @@
                     </div>
                     <div class="form-input mb-16">
                         <i class="fa-solid fa-user"></i>
-                        <input id="email" type="text" class="form-input-control" placeholder="admin@gmail.com">
+                        <input oninput="login_check_input()" id="email" type="text" class="form-input-control" placeholder="admin@gmail.com">
                         <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-login"></span>
                     </div>
-                    <div class="form-input mb-32">
+                    <div class="form-input mb-16">
                         <i class="fa-solid fa-lock "></i>
-                        <input id="password" type="password" class="form-input-control" placeholder="••••••••••••••••••••">
+                        <input oninput="login_check_input()" id="password" type="password" class="form-input-control" placeholder="••••••••••••••••••••">
                         <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-login"></span>
                     </div>
                     <div class="form-checkbox">
                         <div class="form-input-checkbox">
@@ -49,7 +49,7 @@
                             <a href="#"">Quên mật khẩu?</a>
                         </div>
                     </div>
-                    <input type="submit" class="btn" value="Đăng nhập">
+                    <input onclick="login_verify_data()" type="submit" class="btn" value="Đăng nhập">
                     <div class="form-footer">
                         <p class="sign-up">Tạo mới tài khoản?<a href="sign-up.html">Đăng kí</a></p>
                         <p>Hoặc</p>

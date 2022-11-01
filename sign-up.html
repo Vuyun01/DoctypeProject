@@ -27,41 +27,41 @@
                     </div>
                     <div class="form-input mb-16">
                         <i class="fa-solid fa-user-large"></i>
-                        <input id="name" type="text" class="form-input-signup" placeholder="Họ và tên">
+                        <input oninput="signup_check_input()" id="name" type="text" class="form-input-signup" placeholder="Họ và tên">
                         <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-signup"></span>
                     </div>
                     <div class="form-input mb-16">
                         <i class="fa-solid fa-envelope"></i>
-                        <input id="email2" type="text" class="form-input-signup" placeholder="Địa chỉ email">
+                        <input oninput="signup_check_input()" id="email2" type="text" class="form-input-signup" placeholder="Địa chỉ email">
                         <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-signup"></span>
                     </div>
                     <div class="form-input mb-16">
                         <i class="fa-solid fa-phone"></i>
-                        <input id="phone" type="tel" class="form-input-signup" placeholder="Số điện thoại liên hệ">
+                        <input oninput="signup_check_input()" id="phone" type="tel" class="form-input-signup" placeholder="Số điện thoại liên hệ">
                          <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-signup"></span>
                     </div>
                     <div class="form-input mb-16">
                         <i class="fa-solid fa-book-open"></i>
-                        <input id="company" type="text" class="form-input-signup" placeholder="Tên công ty">
+                        <input oninput="signup_check_input()" id="company" type="text" class="form-input-signup" placeholder="Tên công ty">
                          <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-signup"></span>
                     </div>
                     <div class="form-input mb-16">
                         <i class="fa-solid fa-address-book"></i>
-                        <input id="address" type="text" class="form-input-signup" placeholder="Địa chỉ liên hệ">
+                        <input oninput="signup_check_input()" id="address" type="text" class="form-input-signup" placeholder="Địa chỉ liên hệ">
                          <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="form-error-message"></span>
+                        <span class="form-error-message t-signup"></span>
                     </div>
                     
-                    <input type="submit" class="btn" value="Đăng kí">
+                    <input onclick="signup_verify_data()" type="submit" class="btn" value="Đăng kí">
                     <div class="form-footer">
                         <p>Hoặc</p>
                         <div class="signin-methods">
