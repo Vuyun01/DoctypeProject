@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/styles.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/scss/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="logo-section padding-lr-36">
+                <a href=""><img src="/assets/imgs/logo.png" alt="logo"></a>
+                
+            </div>
+        </div>
+        <div id="content-section">
+            <div class="img-section col-half">
+                <img src="./assets/imgs/background.png" alt="Demo image">
+            </div>
+            <div class="form-section col-full col-half padding-lr-36 mt-32">
+                <form action="" class="txt-center form-control" id="form-login">
+                    <div class="form-header mb-32">
+                        <h2>Đăng nhập</h2>
+                    </div>
+                    <div class="form-input mb-16">
+                        <i class="fa-solid fa-user"></i>
+                        <input id="email" type="text" class="form-input-control" placeholder="admin@gmail.com">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="form-error-message"></span>
+                    </div>
+                    <div class="form-input mb-32">
+                        <i class="fa-solid fa-lock "></i>
+                        <input id="password" type="password" class="form-input-control" placeholder="••••••••••••••••••••">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="form-error-message"></span>
+                    </div>
+                    <div class="form-checkbox">
+                        <div class="form-input-checkbox">
+                            <input type="checkbox" name="login" id="login">
+                            <label for="login">Ghi nhớ mật khẩu</label>
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="#"">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn" value="Đăng nhập">
+                    <div class="form-footer">
+                        <p class="sign-up">Tạo mới tài khoản?<a href="sign-up.html">Đăng kí</a></p>
+                        <p>Hoặc</p>
+                        <div class="form-social-icons">
+                            <a href="" class="social-icon"><img src="./assets/imgs/google-icon.png" alt="gg"></a>
+                            <a href="" class="social-icon"><img src="./assets/imgs/twitter-icon.png" alt="tw"></a>
+                            <a href="" class="social-icon"><img src="./assets/imgs/facebook-icon.png" alt="fb"></a>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div id="footer" class="padding-lr-36">
+            <div class="copy-right">
+                <p>Copyright Reserved &copy; 2022 HMI JSC</p>
+            </div>
+            <div class="policy-privacy">
+                <a href="">Điều khoản và Điều kiện</a>
+                <div>|</div>
+                <a href="">Chính sách bảo mật</a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/validation.js" defer></script>
+</body>
+</html>

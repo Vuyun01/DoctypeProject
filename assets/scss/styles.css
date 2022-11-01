@@ -1,0 +1,248 @@
+/* HEADER */
+/* Additional atributes */
+/* CONTENTS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header .logo-section {
+  height: 56px;
+}
+#header .logo-section a {
+  display: inline-block;
+  height: 100%;
+}
+#header .logo-section img {
+  height: 100%;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.padding-lr-36 {
+  padding: 0 36px;
+}
+
+.col-half {
+  width: 50%;
+  float: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.error {
+  outline-color: #fa2a0a !important;
+  border-color: #fa2a0a !important;
+}
+
+.success {
+  outline-color: #0aad10 !important;
+  border-color: #0aad10 !important;
+}
+
+#content-section {
+  overflow: hidden;
+}
+#content-section .form-header {
+  color: cadetblue;
+}
+
+.img-section img {
+  width: 80%;
+}
+
+.form-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-input .form-input-control {
+  width: 100%;
+  padding: 16px 8px 16px 56px;
+  border: 2px solid #0aad10;
+  border-radius: 3px;
+}
+.form-input .form-input-control:focus {
+  outline: #0aad10 solid 2px;
+}
+.form-input i {
+  position: absolute;
+}
+.form-input i.fa-user, .form-input i.fa-lock {
+  left: 36px;
+}
+.form-input i.fa-circle-check {
+  right: 16px;
+  visibility: hidden;
+  color: #0aad10;
+}
+.form-input i.fa-circle-exclamation {
+  right: 16px;
+  visibility: hidden;
+  color: #fa2a0a;
+}
+.form-input .form-error-message {
+  color: #fa2a0a;
+  position: absolute;
+  font-size: 13px;
+  top: 56px;
+  left: 15px;
+}
+
+.form-checkbox {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.form-checkbox .form-input-checkbox {
+  color: #0aad10;
+  display: flex;
+  align-items: center;
+}
+.form-checkbox label {
+  margin-left: 5px;
+}
+.form-checkbox input[type=checkbox] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #d5d5d5;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.form-checkbox input[type=checkbox]::after {
+  content: "\f00c";
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  font-family: "Font Awesome 5 Free";
+  display: none;
+}
+.form-checkbox input[type=checkbox]:hover {
+  background-color: #a5a5a5;
+}
+.form-checkbox input[type=checkbox]:checked {
+  background-color: #0aad10;
+}
+.form-checkbox input[type=checkbox]:checked::after {
+  display: block;
+}
+
+.forgot-pass a {
+  text-decoration: none;
+  color: #0aad10;
+}
+
+.form-input-signup {
+  border: none;
+  width: 100%;
+  padding: 9px 26px;
+  border-bottom: 2px solid grey;
+  outline: none;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #0aad10;
+  font-weight: bold;
+}
+.btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.form-footer > p {
+  margin: 10px 0;
+  color: #0aad10;
+}
+.form-footer .sign-up a {
+  color: #0aad10;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.form-footer .signin-methods {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.signin-methods .social-signin-method {
+  color: #0aad10;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border: 3px solid lightgrey;
+  border-radius: 6px;
+  padding: 4px;
+  margin: 5px;
+  width: 10em;
+}
+.signin-methods .social-signin-method p {
+  font-size: 12px;
+}
+.signin-methods .social-signin-method img {
+  width: 26px;
+}
+
+.form-social-icons .social-icon {
+  margin: 0 5px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.form-social-icons .social-icon img {
+  width: 100%;
+}
+
+.policy-privacy {
+  display: flex;
+  align-items: center;
+}
+.policy-privacy a {
+  text-decoration: none;
+  color: #0aad10;
+}
+.policy-privacy div {
+  font-size: 10px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+#footer {
+  color: #0aad10;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */

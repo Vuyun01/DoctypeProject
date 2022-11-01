@@ -1,0 +1,111 @@
+/* Tablet */
+/* Mobile */
+@media (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .form-footer {
+    margin: 26px 0;
+  }
+  .form-checkbox {
+    margin-bottom: 26px;
+  }
+  #header .logo-section {
+    height: 46px;
+  }
+}
+@media (max-width: 739px) {
+  .img-section.col-half {
+    display: none;
+  }
+  .col-full {
+    width: 100%;
+  }
+  #header .logo-section {
+    height: 40px;
+    padding: 0 16px;
+  }
+  .form-control {
+    margin: 36px 0;
+  }
+  .form-control .form-header {
+    font-size: 26px;
+    margin-bottom: 56px;
+  }
+  .form-input {
+    margin-bottom: 36px !important;
+  }
+  .form-input .form-error-message {
+    top: 88px;
+    font-size: 15px;
+  }
+  .form-input .form-input-control {
+    line-height: 46px;
+    font-size: 20px;
+  }
+  .form-input .form-login-icon {
+    left: 23px;
+    top: 23px;
+    font-size: 30px;
+  }
+  .form-input .form-signup-icon {
+    font-size: 26px;
+    top: 16px;
+    left: 5px;
+  }
+  .form-section {
+    padding: 0 20px;
+  }
+  .form-section .form-input {
+    margin-bottom: 26px;
+  }
+  .form-checkbox {
+    font-size: 20px;
+    margin: 26px 0;
+  }
+  .form-checkbox input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+  .btn {
+    display: block;
+    padding: 18px 0;
+    width: 100%;
+    line-height: 46px;
+    font-size: 23px;
+  }
+  .form-footer {
+    font-size: 20px;
+    margin: 26px 0;
+  }
+  .form-footer > p {
+    font-size: 20px;
+    margin: 26px 0;
+  }
+  .form-social-icons .social-icon {
+    width: 56px;
+    height: 56px;
+  }
+  #footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form-input-signup {
+    padding: 8px 20px 8px 42px;
+    line-height: 46px;
+    font-size: 20px;
+  }
+  .signin-methods .social-signin-method {
+    padding: 10px 16px;
+    width: 14em;
+    margin: 10px;
+  }
+  .signin-methods .social-signin-method img {
+    width: 36px;
+  }
+  .signin-methods .social-signin-method p {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
